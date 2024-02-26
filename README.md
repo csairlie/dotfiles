@@ -1,4 +1,5 @@
 # My dotfiles
+![Example Config](example.png)
 
 ### Some Apps I Use
 - [Alacritty](https://github.com/alacritty/alacritty) (Terminal emulator)
