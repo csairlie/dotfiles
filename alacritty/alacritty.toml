@@ -1,0 +1,21 @@
+import = ["/Users/callumairlie/.config/alacritty/themes/smoooooth.toml"]
+
+[window]
+    opacity = 0.85
+    decorations = "Buttonless"
+    dynamic_padding = false
+
+[window.padding]
+    x = 12
+    y = 12
+
+[font]
+    size = 16
+
+[font.normal]
+    family = "SFMono Nerd Font"
+    style = "Regular"
+
+[cursor.style]
+  shape = "Underline"
+

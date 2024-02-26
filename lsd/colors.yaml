@@ -1,0 +1,38 @@
+user: 159                           # cyan
+group: 231                          # foreground
+permission:
+  read: 159                         # cyan
+  write: 212                        # magenta
+  exec: 159                         # cyan
+  exec-sticky: 159                  # cyan
+  no-access: 210                    # red
+  octal: 6
+  acl: cyan
+  context: cyan
+date:
+  hour-old: 146                     # comment 20% lighter
+  day-old: 103                      # comment
+  older: 60                         # current line
+size:
+  none: 159                          # current line
+  small: 159                        # cyan
+  medium: 159                       # cyan
+  large: 159                        # cyan
+inode:
+  valid: 231                        # foreground
+  invalid: 210                      # red
+links:
+  valid: 159                        # cyan
+  invalid: 210                      # red
+tree-edge: 159                      # cyan
+git-status:
+  default: 245
+  unmodified: 245
+  ignored: 245
+  new-in-index: dark_green
+  new-in-workdir: dark_green
+  typechange: dark_yellow
+  deleted: dark_red
+  renamed: dark_green
+  modified: dark_yellow
+  conflicted: dark_red
