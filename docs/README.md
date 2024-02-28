@@ -24,4 +24,4 @@
 - [zsh-syntax-highlighting](https://formulae.brew.sh/formula/zsh-syntax-highlighting)
 
 ### neovim
-I use [LazyVim](https://www.lazyvim.org/) as the base for my neovim setup
+I use a custom neovim config with [lazy.nvim](https://github.com/folke/lazy.nvim) as my plugin manager
