@@ -1,3 +1,9 @@
+-- disable netrw (use nvim-tree instead) --
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+-- enable 24-bit color for nvim-tree --
+vim.opt.termguicolors = true
+
 local set = vim.opt
 ----- vim options -----
 vim.g.mapleader = " "           -- set leader key to space

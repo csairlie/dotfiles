@@ -10,10 +10,10 @@ vim.g.mapleader = " "
 -- vim.g.maplocalleader = " "
 
 -- Disable arrow keys
-map('', '<up>', '<nop>', opts)
-map('', '<down>', '<nop>', opts)
-map('', '<left>', '<nop>', opts)
-map('', '<right>', '<nop>', opts)
+-- map('', '<up>', '<nop>', opts)
+-- map('', '<down>', '<nop>', opts)
+-- map('', '<left>', '<nop>', opts)
+-- map('', '<right>', '<nop>', opts)
 
 -- NvimTree
 -- map('n', '<C-n>', ':NvimTreeToggle<CR>')            -- open/close
