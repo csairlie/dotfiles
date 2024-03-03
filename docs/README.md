@@ -5,7 +5,6 @@
 - [Alacritty](https://github.com/alacritty/alacritty) (Terminal emulator written in Rust)
 - [Alfred 5](https://www.alfredapp.com/) (Spotlight replacement)
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [Chromium](https://www.chromium.org/Home/) (Un-googled Chrome)
 - [Firefox](https://www.mozilla.org/en-CA/firefox/new/)
 - [Hidden Bar](https://github.com/dwarvesf/hidden) (Hide MacOS menu bar items)
 - [Karabiner Elements](https://karabiner-elements.pqrs.org/) (Remap keyboard)
@@ -25,3 +24,4 @@
 
 ### neovim
 I use a custom neovim config with [lazy.nvim](https://github.com/folke/lazy.nvim) as my plugin manager
+
