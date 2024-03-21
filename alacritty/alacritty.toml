@@ -10,7 +10,7 @@ import = ["/Users/callumairlie/.config/alacritty/themes/smoooooth.toml"]
     y = 12
 
 [font]
-    size = 16
+    size = 18
 
 [font.normal]
     family = "SFMono Nerd Font"
@@ -19,3 +19,49 @@ import = ["/Users/callumairlie/.config/alacritty/themes/smoooooth.toml"]
 [cursor.style]
   shape = "Underline"
 
+### Remapping keybindings for tmux ###
+# Use any PUA codes E000 - E009
+# They are unassigned unicode chars (more online)
+
+# Split Window Horitzontally
+[[keyboard.bindings]]
+key = "("
+mods = "Command|Shift"
+chars = "\uE000"
+
+# Split Window Vertically
+[[keyboard.bindings]]
+key = ")"
+mods = "Command|Shift"
+chars = "\uE001"
+
+# Resize panes
+[[keyboard.bindings]]
+key = "H"
+mods = "Command|Shift"
+chars = "\uE002"
+
+[[keyboard.bindings]]
+key = "J"
+mods = "Command|Shift"
+chars = "\uE003"
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Command|Shift"
+chars = "\uE004"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Command|Shift"
+chars = "\uE006"
+
+[[keyboard.bindings]]
+key = "_"
+mods = "Command|Shift"
+chars = "\uE010"
+
+[[keyboard.bindings]]
+key = "+"
+mods = "Command|Shift"
+chars = "\uE011"
