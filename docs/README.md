@@ -14,6 +14,7 @@
 - [Rectangle](https://rectangleapp.com/) (Window manager for MacOS)
 - [SelfControl](https://selfcontrolapp.com/) (Nuclear content blocker)
 - [TinkerTool](https://www.bresink.com/osx/0TinkerTool/download.php) (Advanced/hidden settings for MacOS)
+- [Taskell](https://taskell.app) (To-do list with Vim keybindings)
 
 ### Formulae Installed with Homebrew
 - [lazygit](https://formulae.brew.sh/formula/lazygit)
