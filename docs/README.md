@@ -15,6 +15,7 @@
 - [SelfControl](https://selfcontrolapp.com/) (Nuclear content blocker)
 - [TinkerTool](https://www.bresink.com/osx/0TinkerTool/download.php) (Advanced/hidden settings for MacOS)
 - [Taskell](https://taskell.app) (To-do list with Vim keybindings)
+- [HotKey](https://codenuts.de/en/posts/hotkey/) (Custom hotkeys for MacOS)
 
 ### Formulae Installed with Homebrew
 - [lazygit](https://formulae.brew.sh/formula/lazygit)

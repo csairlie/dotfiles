@@ -12,29 +12,47 @@ return {
 
     telescope.setup({
       defaults = {
+          path_display = { "smart" },
         file_ignore_patterns = {
-            "Pictures/*",
-            "Movies/*",
-            "Public/*",
-            "Music/*",
-            "Library/*",
-            "System/*",
             "Applications/*",
-            "Shared/*",
+            "Documents/*",
+            "Library/*",
+            "Movies/*",
+            "Music/*",
+            "Pictures/*",
+            "Public/*",
             "school/slides/*",
         },
       },
     })
-    
-    -- Create command to search in neovim config directory
-    vim.api.nvim_create_user_command(
+   
+    telescope.load_extension("fzf") 
+
+    -- Custom Commands
+    -- Search in neovim dir
+    local command = vim.api
+    command.nvim_create_user_command(
         'Config',
         function ()
-            require('telescope.builtin').find_files({cwd="~/.config/nvim"})
+        require('telescope.builtin').find_files({cwd="~/.config/nvim"})
         end,
         {}
     )
-
-    telescope.load_extension("fzf")
+    -- Search in home dir
+    command.nvim_create_user_command(
+        'Home',
+        function()
+        require('telescope.builtin').find_files({cwd="~/"})
+        end,
+        {}
+    )
+    
+    -- Keymaps
+    local keymap = vim.keymap
+    keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Find Files in CWD" })
+    keymap.set("n", "<leader>h", "<cmd>Home<cr>", { desc = "Find files in ~" })
+    keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", { desc = "Find Recent Files" })
+    keymap.set("n", "<leader>g", "<cmd>Telescope live_grep<cr>", { desc = "Grep String in CWD" })
+    keymap.set("n", "<leader>c", "<cmd>Config<cr>", { desc = "Edit Config" }) -- Custom command using Telescope
   end,
 }

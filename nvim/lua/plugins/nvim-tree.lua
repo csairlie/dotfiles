@@ -16,7 +16,7 @@ return {
     -- configure nvim-tree
     nvimtree.setup({
       view = {
-        width = 35,
+        width = 25,
         relativenumber = true,
       },
       -- change folder arrow icons
@@ -27,8 +27,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = "", -- arrow when folder is closed
-              arrow_open = "", -- arrow when folder is open
+              arrow_closed = "", -- arrow when folder is closed
+              arrow_open = "", -- arrow when folder is open
             },
           },
         },
@@ -44,12 +44,22 @@ return {
         },
       },
       filters = {
-          -- because.DS_Store is a bother!
-        custom = { ".DS_Store" },
+        git_clean = false,
+        no_buffer = false,
+        custom = { 
+            ".DS_Store", 
+            "*.o",
+            ".android",
+            ".cache"
+        },
       },
       git = {
         ignore = false,
       },
     })
+    -- Keymaps
+    local keymap = vim.keymap
+    keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Nvim-Tree" })
+    -- keymap.set("n", "<leader>t", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Explorer" })
   end,
 }
