@@ -1,0 +1,18 @@
+gui:
+  theme:
+    activeBorderColor:
+      - cyan
+      - bold
+    inactiveBorderColor:
+      - grey
+    optionsTextColor:
+      - white
+    selectLineBgColor:
+      - default
+
+showRandomTip: false
+showBottomLine: false
+quitOnTopLevelReturn: true
+disableStartupProcess: true
+promptToReturnFromSubprocess: false
+notARepository: 'quit'

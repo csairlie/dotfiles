@@ -15,3 +15,4 @@ set.softtabstop = 4             -- num of spaces instead of tab char
 set.shiftwidth = 4              -- num of spaces when indenting
 set.clipboard = "unnamedplus"   -- enable clipboard
 set.mouse = "a"                 -- enable mouse
+set.wrap = false                -- disable text wrapping
