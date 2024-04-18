@@ -2,10 +2,9 @@
 ![Example Config](example.png)
 
 ### Some Apps I Use
-- [Alacritty](https://github.com/alacritty/alacritty) (Terminal emulator written in Rust)
+- [Alacritty](https://github.com/alacritty/alacritty) (Rust-based Terminal emulator)
 - [Alfred 5](https://www.alfredapp.com/) (Spotlight replacement)
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [Firefox](https://www.mozilla.org/en-CA/firefox/new/)
 - [Hidden Bar](https://github.com/dwarvesf/hidden) (Hide MacOS menu bar items)
 - [Karabiner Elements](https://karabiner-elements.pqrs.org/) (Remap keyboard)
 - [Lightweight PDF](https://lightweightpdf.com/) (Simple pdf compressor)
@@ -23,7 +22,9 @@
 - [neovim](https://formulae.brew.sh/formula/neovim)
 - [tree](https://formulae.brew.sh/formula/tree)
 - [zsh-syntax-highlighting](https://formulae.brew.sh/formula/zsh-syntax-highlighting)
-
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [alt-tab](https://alt-tab-macos.netlify.app)
+  
 ### neovim
 I use a custom neovim config with [lazy.nvim](https://github.com/folke/lazy.nvim) as my plugin manager
 
