@@ -1,0 +1,9 @@
+- Minimal-44 Theme
+- Prettier
+- Subtle Match Brackets
+- vscode-icons
+- vscode-pdf
+- Code Runner
+- Error Lens
+- Live Server
+- Vim
