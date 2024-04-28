@@ -1,3 +1,4 @@
+# command prompt
 PROMPT="%F{049}%1~%f "
 
 # zsh-syntax-highlighting
@@ -6,26 +7,23 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[unknown-token]='none'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=051'
 
-# Sets colors for lsd to use
+# lsd colours
 export CLICOLOR=YES
 export LS_COLORS=di=36:ln=37:so=37:pi=37:ex=32:bd=37:cd=37:su=37:sg=37:tw=37:ow=37
 
-# Neovim / Config
+# homebrew
+export HOMEBREW_NO_ENV_HINTS=TRUE
+
+# neovim
 alias vim="nvim"
 alias v="nvim"
 alias lv="vim -c \"normal '0\""
-alias conf="cd ~/.config"
-alias plug="cd ~/.config/nvim/lua/plugins" 
 
-# Command Line
+# commands
 alias ls="lsd"
 alias sz="source ~/.zshrc"
 alias c="clear"
 alias e="exit"
-
-# cd
-alias gh="cd ~/GitHub"
-alias code="cd ~/code"
 
 # tmux
 alias t="tmux"
@@ -34,8 +32,12 @@ alias t="tmux"
 alias lg="lazygit"
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# Taskell
+# taskell
 alias todo="taskell ~/.config/taskell/taskell.md"
 
-# Homebrew
+# homebrew
 alias deps="brew deps --tree --installed"
+
+# zoxide
+alias cd="z"
+eval "$(zoxide init zsh)"
