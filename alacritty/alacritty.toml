@@ -1,12 +1,17 @@
 import = [
-"/Users/callumairlie/.config/alacritty/themes/smoooooth.toml",
-"/Users/callumairlie/.config/alacritty/keybindings.toml",
+"~/.config/alacritty/themes/coolnight.toml",
+"~/.config/alacritty/keybindings.toml",
 ]
+
+[ env ]
+TERM = "xterm-256color"
 
 [window]
     opacity = 0.85
     decorations = "Buttonless"
     dynamic_padding = false
+    blur = true
+    option_as_alt = "Both"
 
 [window.padding]
     x = 12
