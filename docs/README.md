@@ -15,6 +15,7 @@
 - [TinkerTool](https://www.bresink.com/osx/0TinkerTool/download.php) (Advanced/hidden settings for MacOS)
 - [Taskell](https://taskell.app) (To-do list with Vim keybindings)
 - [HotKey](https://codenuts.de/en/posts/hotkey/) (Custom hotkeys for MacOS)
+- [Amethyst](https://github.com/ianyh/Amethyst) (Window focusing w/keybindings)
 
 ### Formulae Installed with Homebrew
 - [lazygit](https://formulae.brew.sh/formula/lazygit)
