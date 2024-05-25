@@ -14,6 +14,11 @@ key = ")"
 mods = "Command|Shift"
 chars = "\uE001"
 
+[[keyboard.bindings]]
+key = "0"
+mods = "Control"
+chars = "\uE001"
+
 # Resize panes
 [[keyboard.bindings]]
 key = "H"
