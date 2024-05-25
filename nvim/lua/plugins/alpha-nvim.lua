@@ -57,7 +57,7 @@ return {
     -- Set menu
     dashboard.section.buttons.val = {
     dashboard.button("n", "  > new", "<cmd>ene<CR>"),
-    dashboard.button("<> e", "  > explore", "<cmd>NvimTreeToggle<CR>"),
+    -- dashboard.button("<> e", "  > explore", "<cmd>NvimTreeToggle<CR>"),
     dashboard.button("<> f", "  > find", "<cmd>Telescope find_files<CR>"),
     dashboard.button("<> r", "  > recent", "<cmd>Telescope oldfiles<CR>"),
     dashboard.button("<> c", "  > config", "<cmd>Config<CR>"),

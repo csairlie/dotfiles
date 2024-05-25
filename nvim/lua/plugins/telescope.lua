@@ -21,7 +21,6 @@ return {
             "Music/*",
             "Pictures/*",
             "Public/*",
-            "school/slides/*",
         },
       },
     })
@@ -49,10 +48,9 @@ return {
     
     -- Keymaps
     local keymap = vim.keymap
-    keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Find Files in CWD" })
-    keymap.set("n", "<leader>h", "<cmd>Home<cr>", { desc = "Find files in ~" })
-    keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", { desc = "Find Recent Files" })
-    keymap.set("n", "<leader>g", "<cmd>Telescope live_grep<cr>", { desc = "Grep String in CWD" })
-    keymap.set("n", "<leader>c", "<cmd>Config<cr>", { desc = "Edit Config" }) -- Custom command using Telescope
+    keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "fuzzy find in cwd" })
+    keymap.set("n", "<leader>h", "<cmd>Home<cr>", { desc = "fuzzy find from home" })
+    keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", { desc = "fuzzy find recent files" })
+    keymap.set("n", "<leader>c", "<cmd>Config<cr>", { desc = "fuzzy find from config" }) -- Custom command using Telescope
   end,
 }

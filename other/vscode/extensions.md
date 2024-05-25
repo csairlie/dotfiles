@@ -1,4 +1,3 @@
-- Minimal-44 Theme
 - Prettier
 - Subtle Match Brackets
 - vscode-icons
@@ -7,3 +6,6 @@
 - Error Lens
 - Live Server
 - Vim
+- Markdown Checkboxes
+- Norrsken Theme
+- Apc Customize UI++
