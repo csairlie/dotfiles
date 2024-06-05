@@ -24,6 +24,7 @@
 - [zsh-syntax-highlighting](https://formulae.brew.sh/formula/zsh-syntax-highlighting)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [alt-tab](https://alt-tab-macos.netlify.app)
+- [macdown](https://macdown.uranusjr.com)
   
 ### neovim
 I use a custom neovim config with [lazy.nvim](https://github.com/folke/lazy.nvim) as my plugin manager
