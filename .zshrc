@@ -61,3 +61,6 @@ bindkey '^[[B' history-search-forward
 
 # zsh-autosugesstions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# macdown
+alias md="macdown"
