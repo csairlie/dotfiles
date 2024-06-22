@@ -52,5 +52,6 @@ return {
     keymap.set("n", "<leader>h", "<cmd>Home<cr>", { desc = "fuzzy find from home" })
     keymap.set("n", "<leader>r", "<cmd>Telescope oldfiles<cr>", { desc = "fuzzy find recent files" })
     keymap.set("n", "<leader>c", "<cmd>Config<cr>", { desc = "fuzzy find from config" }) -- Custom command using Telescope
+    keymap.set("n", "<leader>g", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
   end,
 }
