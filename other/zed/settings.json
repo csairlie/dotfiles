@@ -1,15 +1,11 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
 {
   "project_panel": {
-    "dock": "left",
+    "button": false,
+    "dock": "right",
     "git_status": false
+  },
+  "outline_panel": {
+    "button": false
   },
   "collaboration_panel": {
     "button": false
@@ -21,26 +17,51 @@
     "button": false
   },
   "assistant": {
-    "button": false
+    "button": false,
+    "enabled": false
   },
   "git": {
-    "git_gutter": "hide"
+    "git_gutter": "hide",
+    "inline_blame": {
+      "enabled": false
+    }
   },
   "theme": "One Dark",
   "features": {
-    "copilot": false
+    "copilot": true
   },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "scrollbar": {
-    "git_diff": false
+    "show": "never"
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "gutter": {
+    "code_actions": false
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+  "preview_tabs": {
+    "enabled": false
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
-  "vim_mode": false,
+  "vim_mode": true,
   "cursor_blink": false,
   "relative_line_numbers": true,
-  "enable_language_server": false
+  "enable_language_server": true,
+  "current_line_highlight": "none",
+  "autosave": "on_window_change",
+  "extend_comment_on_newline": false,
+  "auto_install_extensions": {
+    "java": true,
+    "zed-java-language-support-jdtls": true
+  }
 }
