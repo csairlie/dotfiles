@@ -38,7 +38,6 @@ config.default_cursor_style = 'SteadyUnderline'
 
 -- keybindings
 local act = wezterm.action
-config.disable_default_key_bindings = true
 config.keys = {
     {
         key = '"',
