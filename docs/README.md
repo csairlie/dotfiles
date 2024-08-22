@@ -5,7 +5,6 @@
 - [Wezterm](https://github.com/wez/wezterm) (Terminal emulator written in Rust with built-in window mulitplexing & lua-based configuration)
 - [Alfred 5](https://www.alfredapp.com/) (Spotlight replacement)
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [Hidden Bar](https://github.com/dwarvesf/hidden) (Hide MacOS menu bar items)
 - [Monitor Control](https://github.com/MonitorControl/MonitorControl) (Control brightness of external monitors)
 - [Numi](https://numi.app/) (Calculator with natural language support)
 - [Rectangle](https://rectangleapp.com/) (Window manager for MacOS)

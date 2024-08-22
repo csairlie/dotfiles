@@ -40,7 +40,7 @@ config.default_cursor_style = 'SteadyUnderline'
 local act = wezterm.action
 config.keys = {
     {
-        key = '"',
+        key = '?',
         mods = 'CMD|SHIFT',
         action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
     },
