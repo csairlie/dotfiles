@@ -1,3 +1,3 @@
-require('config.options')
-require('config.keymaps')
-require('config.lazy')
+require('csairlie.config.options')
+require('csairlie.config.keymaps')
+require('csairlie.config.lazy')
