@@ -1,73 +1,72 @@
 return {
-  "goolord/alpha-nvim",
-  event = "VimEnter",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
-  config = function()
-    local alpha = require("alpha")
-    local dashboard = require("alpha.themes.dashboard")
+	"goolord/alpha-nvim",
+	event = "VimEnter",
+	dependencies = { "nvim-tree/nvim-web-devicons" },
+	config = function()
+		local alpha = require("alpha")
+		local dashboard = require("alpha.themes.dashboard")
 
-    local Home = {
-        "+49.2673844992692",
-        "",
-        "-123.178222775459",
-    }
+		local Home = {
+			"+49.2673844992692",
+			"",
+			"-123.178222775459",
+		}
 
-    local Vim = {
-        "          .          .     ",
-        "        ';;,.        ::'   ",
-        "      ,:::;,,        :ccc, ",
-        "     ,::c::,,,,.     :cccc,",
-        "     ,cccc:;;;;;.    cllll,",
-        "     ,cccc;.;;;;;,   cllll;",
-        "     :cccc; .;;;;;;. coooo;",
-        "     ;llll;   ,:::::'loooo;",
-        "     ;llll:    ':::::loooo:",
-        "     :oooo:     .::::llodd:",
-        "     .;ooo:       ;cclooo:.",
-        "       .;oc        'coo;.  ",
-        "         .'         .,.    ",
-     }
+		local Vim = {
+			"          .          .     ",
+			"        ';;,.        ::'   ",
+			"      ,:::;,,        :ccc, ",
+			"     ,::c::,,,,.     :cccc,",
+			"     ,cccc:;;;;;.    cllll,",
+			"     ,cccc;.;;;;;,   cllll;",
+			"     :cccc; .;;;;;;. coooo;",
+			"     ;llll;   ,:::::'loooo;",
+			"     ;llll:    ':::::loooo:",
+			"     :oooo:     .::::llodd:",
+			"     .;ooo:       ;cclooo:.",
+			"       .;oc        'coo;.  ",
+			"         .'         .,.    ",
+		}
 
-     local Seagram = {
-         
-        "          +           ",
-        "       +++++++        ",
-        "     +++++++++++++++  ",
-        "   ++  +++++++++++    ",
-        "  +++     ++++++      ",
-        " ++++                 ",
-        "+++++++               ",
-        "++++++++++            ",
-        "+++++++++++++++       ",
-        "  +++++++++++++++++   ",
-        "    +++++++++++++++++ ",
-        "        ++++++++++++++",
-        "             +++++++++",
-        "                +++++ ",
-        "    +++++++      +++  ",
-        "++++++++++++++   ++   ",
-        "   ++++++++++++++     ",
-        "      +++++++++       ",
-        "        +++++         ",
-        "          +           ",
-    }
-      -- Set header
-    dashboard.section.header.val = Vim
+		local Seagram = {
 
-    -- Set menu
-    dashboard.section.buttons.val = {
-    dashboard.button("n", "  > new", "<cmd>ene<CR>"),
-    dashboard.button("<> f", "  > find", "<cmd>Telescope find_files<CR>"),
-    dashboard.button("<> r", "  > recent", "<cmd>Telescope oldfiles<CR>"),
-    dashboard.button("q", "  > quit", "<cmd>qa<CR>"),
-    }
+			"          +           ",
+			"       +++++++        ",
+			"     +++++++++++++++  ",
+			"   ++  +++++++++++    ",
+			"  +++     ++++++      ",
+			" ++++                 ",
+			"+++++++               ",
+			"++++++++++            ",
+			"+++++++++++++++       ",
+			"  +++++++++++++++++   ",
+			"    +++++++++++++++++ ",
+			"        ++++++++++++++",
+			"             +++++++++",
+			"                +++++ ",
+			"    +++++++      +++  ",
+			"++++++++++++++   ++   ",
+			"   ++++++++++++++     ",
+			"      +++++++++       ",
+			"        +++++         ",
+			"          +           ",
+		}
+		-- Set header
+		dashboard.section.header.val = Vim
 
-    -- Send config to alpha
-    alpha.setup(dashboard.opts)
-    -- Disable folding on alpha buffer
-    vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
-    -- Remove tildes from dashboard
-    vim.opt.fillchars = { eob = " " }
+		-- Set menu
+		dashboard.section.buttons.val = {
+			dashboard.button("n", "  > new", "<cmd>ene<CR>"),
+			dashboard.button("<> ff", "  > find", "<cmd>Telescope find_files<CR>"),
+			dashboard.button("<> fr", "  > recent", "<cmd>Telescope oldfiles<CR>"),
+			dashboard.button("q", "  > quit", "<cmd>qa<CR>"),
+		}
 
-  end,
+		-- Send config to alpha
+		alpha.setup(dashboard.opts)
+		-- Disable folding on alpha buffer
+		vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
+		-- Remove tildes from dashboard
+		vim.opt.fillchars = { eob = " " }
+	end,
 }
