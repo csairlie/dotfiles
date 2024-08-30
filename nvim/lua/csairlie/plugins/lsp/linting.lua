@@ -21,5 +21,13 @@ return {
 		vim.keymap.set("n", "<leader>ll", function()
 			lint.try_lint()
 		end, { desc = "Trigger linting" })
+
+		-- Ignore "No EsLint config found error"
+		lint.linters.eslint_d = require("lint.util").wrap(lint.linters.eslint_d, function(diagnostic)
+			if diagnostic.message:find("Error: Could not find config file") then
+				return nil
+			end
+			return diagnostic
+		end)
 	end,
 }
