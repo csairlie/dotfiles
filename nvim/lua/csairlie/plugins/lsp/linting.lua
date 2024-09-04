@@ -27,6 +27,9 @@ return {
 			if diagnostic.message:find("Error: Could not find config file") then
 				return nil
 			end
+			if diagnostic.messgae:find("Trailing newlines (trailing-newlines)") then
+				return nil
+			end
 			return diagnostic
 		end)
 	end,
