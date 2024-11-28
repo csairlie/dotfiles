@@ -14,6 +14,8 @@ export LS_COLORS=di=36:ln=37:so=37:pi=37:ex=32:bd=37:cd=37:su=37:sg=37:tw=37:ow=
 # homebrew
 export HOMEBREW_NO_ENV_HINTS=TRUE
 export HOMEBREW_CASK_OPTS=--no-quarantine
+export HOMEBREW_NO_UPDATE_REPORT_FORMULAE
+export HOMEBREW_NO_UPDATE_REPORT_CASKS
 
 # neovim
 alias vim="nvim"
@@ -26,18 +28,18 @@ alias sz="source ~/.zshrc"
 alias c="clear"
 alias e="exit"
 
-# tmux
-alias t="tmux"
-
 # lazygit
 alias lg="lazygit"
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# taskell
-alias todo="taskell ~/.config/taskell/taskell.md"
+# ssh
+alias mimi="ssh cairli@mimi.cs.mcgill.ca"
 
 # homebrew
 alias deps="brew deps --tree --installed"
+
+# kasa
+alias light="kasa --type bulb --host 10.0.0.35 toggle"
 
 # zoxide
 alias cd="z"
@@ -62,5 +64,5 @@ bindkey '^[[B' history-search-forward
 # zsh-autosugesstions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# macdown
-alias md="macdown"
+# yt-dlp
+alias ytdlp="yt-dlp -P ~/Music/youtube -f 140"
