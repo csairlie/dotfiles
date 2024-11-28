@@ -27,12 +27,16 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"tsserver", -- javascript lsp
+				"ts_ls", -- javascript lsp
 				"html", -- html lsp
 				"cssls", -- css lsp
 				"pyright", -- python lsp
-				"clangd", -- c lsp
+				"clangd", -- c/cpp lsp
 				"lua_ls", -- lua lsp
+				"marksman", -- markdown lsp
+				"gopls", -- go lsp
+				"intelephense", -- php lsp
+				"terraformls",
 			},
 		})
 
